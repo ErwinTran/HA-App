@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/container">
+
+    <TextView
+        android:id="@+id/titel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="titel"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:clickable="false"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="date"
+        android:textSize="18dp"
+        android:layout_marginLeft="0dp"
+        android:layout_below="@+id/titel"
+        android:layout_alignParentStart="true" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/tButton"
+        android:layout_alignBottom="@+id/date"
+        android:layout_alignParentEnd="true"
+        android:checked="false" />
+
+</RelativeLayout>

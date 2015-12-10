@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Fach / Modul"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Beschreibung"
+        android:id="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/textView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/description"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:password="false"
+        android:maxLines="5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Datum"
+        android:id="@+id/textView3"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/description"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/editTextDate"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toEndOf="@+id/space3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speichern"
+        android:id="@+id/btSave"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/space4" />
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/classes"
+        android:singleLine="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/description"
+        android:layout_toEndOf="@+id/space2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btCalendar"
+        android:background="@drawable/ic_calendar"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/editTextDate"
+        android:layout_alignTop="@+id/editTextDate"
+        android:layout_alignBottom="@+id/space" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_below="@+id/editTextDate"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/space" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Montag"
+        android:id="@+id/day1"
+        android:layout_alignTop="@+id/day2"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/space" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dienstag"
+        android:id="@+id/day2"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/btCalendar"
+        android:layout_toEndOf="@+id/space" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toEndOf="@+id/textView2"
+        android:id="@+id/space2" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:id="@+id/space3" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:id="@+id/space4"
+        android:layout_toEndOf="@+id/day1"
+        android:layout_alignTop="@+id/btSave"
+        android:layout_alignStart="@+id/space" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abbrechen"
+        android:id="@+id/btCancel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/space4" />
+
+</RelativeLayout>

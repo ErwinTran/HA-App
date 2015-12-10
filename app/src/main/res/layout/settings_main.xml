@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weekDay1"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weekDay2"
+        android:spinnerMode="dropdown"
+        android:layout_alignTop="@+id/weekDay1"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Schultagen:"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Fächer:"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/weekDay1"
+        android:layout_alignStart="@+id/weekDay1"
+        android:layout_marginTop="10dp" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:id="@+id/space" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abbrechen"
+        android:id="@+id/btCancel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/space"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speichern"
+        android:id="@+id/btSave"
+        android:layout_alignTop="@+id/btCancel"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/space" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvClasses"
+        android:layout_below="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_above="@+id/space"
+        android:layout_toStartOf="@+id/btDelete"
+        android:choiceMode="multipleChoice" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Löschen"
+        android:id="@+id/btDelete"
+        android:layout_alignTop="@+id/lvClasses"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/btAdd" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hinzufügen"
+        android:id="@+id/btAdd"
+        android:layout_below="@+id/btDelete"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
