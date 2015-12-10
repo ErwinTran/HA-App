@@ -28,7 +28,7 @@ public class SettingsActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.settings_main);
+        setContentView(R.layout.activity_setting);
 
         Bundle b = getIntent().getExtras();
         if(b != null) {

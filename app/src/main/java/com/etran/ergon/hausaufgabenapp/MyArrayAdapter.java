@@ -54,7 +54,7 @@ public class MyArrayAdapter extends ArrayAdapter<Entry> {
         ToggleButton tButton = (ToggleButton) convertView.findViewById(R.id.tButton);
 
         title.setText(entry.getSubject());
-        date.setText(entry.getDuedateS());
+        date.setText(entry.getFormatedDate());
 
         tButton.setText("DONE");
         tButton.setTextOff("DONE");

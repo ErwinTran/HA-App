@@ -12,10 +12,8 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.Locale;
 
 public class NewActivity extends AppCompatActivity {
@@ -40,7 +38,7 @@ public class NewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.new_main);
+        setContentView(R.layout.activity_new);
 
         b = getIntent().getExtras();
         if(b != null) {
@@ -85,7 +83,7 @@ public class NewActivity extends AppCompatActivity {
                 Entry entry = Entry.create(b.getString("entry"));
                 subject.setText(entry.getSubject());
                 description.setText(entry.getDescription());
-                myCalendar.setTime(entry.getDuedate());
+                myCalendar.setTime(entry.getDate());
                 textDate.setText(sdf.format(myCalendar.getTime()));
             }
         }

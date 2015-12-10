@@ -15,14 +15,14 @@ import com.google.gson.Gson;
 public class Entry {
     private String subject;
     private String description;
-    private Date duedate;
+    private Date date;
     private boolean toDelete;
 
     // save this object with sharedpreferences
-    Entry(String subject, String description, Date duedate) {
+    Entry(String subject, String description, Date date) {
         this.subject = subject;
         this.description = description;
-        this.duedate = duedate;
+        this.date = date;
         toDelete = false;
     }
 
@@ -40,17 +40,17 @@ public class Entry {
         this.description = description;
     }
 
-    public String getDuedateS() {
+    public String getFormatedDate() {
         String myFormat = "EEE. dd. MMM. yyyy";
         SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.UK);
 
-        return sdf.format(duedate);
+        return sdf.format(date);
     }
-    public Date getDuedate() {
-        return duedate;
+    public Date getDate() {
+        return date;
     }
-    public void setDuedate(Date duedate) {
-        this.duedate = duedate;
+    public void setDate(Date date) {
+        this.date = date;
     }
 
     public boolean toDelete() {
@@ -61,7 +61,7 @@ public class Entry {
     }
 
     public String getKey() {
-        return subject + "/" + description + "/" + duedate.toString();
+        return subject + "/" + description + "/" + date.toString();
     }
 
     // Shared Preferences stuff

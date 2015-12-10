@@ -15,7 +15,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.Map;
 
 public class ListActivity extends AppCompatActivity {
@@ -35,7 +34,7 @@ public class ListActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.list_main);
+        setContentView(R.layout.activity_list);
         spTasks = getSharedPreferences("Tasks", Context.MODE_PRIVATE);
         spSettings = getSharedPreferences("Setting", Context.MODE_PRIVATE);
 

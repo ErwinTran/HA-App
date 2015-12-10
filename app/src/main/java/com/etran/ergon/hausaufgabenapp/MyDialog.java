@@ -26,7 +26,7 @@ public class MyDialog extends Dialog {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.new_class_dialog);
+        setContentView(R.layout.dialog_new);
         setTitle("Neues Fach:");
 
         inputSubject = (EditText) findViewById(R.id.inputSubject);
