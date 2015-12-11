@@ -38,6 +38,13 @@ public class ListActivity extends AppCompatActivity {
         spTasks = getSharedPreferences("Tasks", Context.MODE_PRIVATE);
         spSettings = getSharedPreferences("Setting", Context.MODE_PRIVATE);
 
+/*
+        // deletes all entries
+        SharedPreferences.Editor editor = spTasks.edit();
+        editor.clear();
+        editor.apply();
+*/
+
         initComponents();
     }
 
@@ -104,7 +111,6 @@ public class ListActivity extends AppCompatActivity {
                 if (myArrayAdapter.getCount() != 0) {
                     ArrayList<Entry> toDeleteList = new ArrayList<>();
                     SharedPreferences.Editor editor = spTasks.edit();
-
                     for (Entry e : myArrayAdapter.getAllItems()) {
                         if (e.toDelete()) {
                             toDeleteList.add(e);
@@ -114,7 +120,6 @@ public class ListActivity extends AppCompatActivity {
                         myArrayAdapter.remove(e);
                         editor.remove(e.getKey());
                     }
-
                     editor.apply();
                     return true;
                 } else {
@@ -148,18 +153,12 @@ public class ListActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == NEW_RESULT_CODE) {
-            if (resultCode == Activity.RESULT_OK) {
+        if (resultCode == Activity.RESULT_OK) {
+            if (requestCode == NEW_RESULT_CODE) {
                 onAddEntryActivity(data);
-            }
-        }
-        else if(requestCode == EDIT_RESULT_CODE) {
-            if(resultCode == Activity.RESULT_OK) {
+            } else if (requestCode == EDIT_RESULT_CODE) {
                 onOverwriteEntryActivity(data);
-            }
-        }
-        else if(requestCode == SETTINGS_RESULT_CODE) {
-            if(resultCode == Activity.RESULT_OK) {
+            } else if (requestCode == SETTINGS_RESULT_CODE) {
                 onSettingsActivity(data);
             }
         }

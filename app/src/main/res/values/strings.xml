@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">HausaufgabenApp</string>
+    <!--<string name="app_name">HausaufgabenApp</string>-->
+    <string name="listActivity">Aufgaben</string>
+    <string name="newActivity">Neue Aufgabe</string>
+    <string name="settingsActivity">Einstellungen</string>
+
+    <string name="save">Speichern</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="add">Hinzufügen</string>
+    <string name="delete">Löschen</string>
+    <string name="schoolday">Schultagen</string>
+    <string name="classes">Fächer</string>
 </resources>

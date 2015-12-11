@@ -9,9 +9,6 @@ import java.util.Locale;
 // choose "add as library"
 import com.google.gson.Gson;
 
-/**
- * Created by etran on 11/20/15.
- */
 public class Entry {
     private String subject;
     private String description;
@@ -40,12 +37,12 @@ public class Entry {
         this.description = description;
     }
 
-    public String getFormatedDate() {
+    public String getFormattedDate() {
         String myFormat = "EEE. dd. MMM. yyyy";
         SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.UK);
-
         return sdf.format(date);
     }
+
     public Date getDate() {
         return date;
     }

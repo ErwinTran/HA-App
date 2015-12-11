@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#EFDB44</color>
+    <!-- list activity -->
+    <color name="listColorPrimary">#EFDB44</color>
+
+    <!-- new activity -->
+    <color name="newColorPrimary">#EA1717</color>
+
+    <!-- setting activity -->
+    <color name="settingsColorPrimary">#2F5DDC</color>
+
     <color name="colorPrimaryDark">#8E8E8E</color>
-    <color name="colorAccent">#4253EA</color>
+    <color name="colorAccent">#4456FF</color>
 </resources>

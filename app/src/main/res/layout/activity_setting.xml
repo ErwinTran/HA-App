@@ -23,18 +23,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Schultagen:"
+        android:text="@string/schoolday"
         android:id="@+id/textView4"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="21dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="20dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Fächer:"
+        android:text="@string/classes"
         android:id="@+id/textView5"
         android:layout_below="@+id/weekDay1"
         android:layout_alignStart="@+id/weekDay1"
@@ -51,19 +51,19 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Abbrechen"
+        android:text="@string/cancel"
         android:id="@+id/btCancel"
         android:layout_alignParentBottom="true"
         android:layout_alignEnd="@+id/space"
-        android:layout_alignParentStart="true" />
+        android:layout_alignStart="@+id/lvClasses" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Speichern"
+        android:text="@string/save"
         android:id="@+id/btSave"
         android:layout_alignTop="@+id/btCancel"
-        android:layout_alignParentEnd="true"
+        android:layout_alignEnd="@+id/btAdd"
         android:layout_toEndOf="@+id/space" />
 
     <ListView
@@ -79,18 +79,19 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Löschen"
+        android:text="@string/delete"
         android:id="@+id/btDelete"
         android:layout_alignTop="@+id/lvClasses"
-        android:layout_alignParentEnd="true"
-        android:layout_alignStart="@+id/btAdd" />
+        android:layout_alignStart="@+id/btAdd"
+        android:layout_alignEnd="@+id/btAdd" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hinzufügen"
+        android:text="@string/add"
         android:id="@+id/btAdd"
         android:layout_below="@+id/btDelete"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp" />
 
 </RelativeLayout>

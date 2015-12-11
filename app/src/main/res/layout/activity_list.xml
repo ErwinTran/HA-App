@@ -21,7 +21,10 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:tint="#FFFFFF" />
 
     <ListView
         android:layout_width="147dp"

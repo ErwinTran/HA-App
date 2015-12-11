@@ -4,84 +4,40 @@
         <layer-list>
             <item>
                 <shape android:shape="oval">
-                    <solid android:color="#08000000"/>
+                    <solid android:color="#C9C9C9"/>
+                    <padding
+                        android:bottom="4px"
+                        android:left="0px"
+                        android:right="4px"
+                        android:top="0px"
+                        />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="#B7B7B7"/>
                     <padding
                         android:bottom="3px"
-                        android:left="3px"
+                        android:left="0px"
                         android:right="3px"
-                        android:top="3px"
+                        android:top="0px"
                         />
                 </shape>
             </item>
             <item>
                 <shape android:shape="oval">
-                    <solid android:color="#09000000"/>
+                    <solid android:color="#979797"/>
                     <padding
                         android:bottom="2px"
-                        android:left="2px"
+                        android:left="0px"
                         android:right="2px"
-                        android:top="2px"
+                        android:top="0px"
                         />
                 </shape>
             </item>
             <item>
                 <shape android:shape="oval">
-                    <solid android:color="#10000000"/>
-                    <padding
-                        android:bottom="2px"
-                        android:left="2px"
-                        android:right="2px"
-                        android:top="2px"
-                        />
-                </shape>
-            </item>
-            <item>
-                <shape android:shape="oval">
-                    <solid android:color="#11000000"/>
-                    <padding
-                        android:bottom="1px"
-                        android:left="1px"
-                        android:right="1px"
-                        android:top="1px"
-                        />
-                </shape>
-            </item>
-            <item>
-                <shape android:shape="oval">
-                    <solid android:color="#12000000"/>
-                    <padding
-                        android:bottom="1px"
-                        android:left="1px"
-                        android:right="1px"
-                        android:top="1px"
-                        />
-                </shape>
-            </item>
-            <item>
-                <shape android:shape="oval">
-                    <solid android:color="#13000000"/>
-                    <padding
-                        android:bottom="1px"
-                        android:left="1px"
-                        android:right="1px"
-                        android:top="1px"
-                        />
-                </shape>
-            </item>
-            <item>
-                <shape android:shape="oval">
-                    <solid android:color="#14000000"/>
-                    <padding
-                        android:bottom="1px"
-                        android:left="1px"
-                        android:right="1px"
-                        android:top="1px"
-                        />
-                </shape>
-            </item>
-            <item>
-                <shape android:shape="oval">
-                    <solid android:color="#15000000"/>
+                    <solid android:color="#F5D100"/>
                     <padding
                         android:bottom="1px"
                         android:left="1px"
@@ -106,7 +62,7 @@
             <item>
                 <shape android:shape="oval">
 
-                    <solid android:color="@color/colorPrimary" />
+                    <solid android:color="@color/listColorPrimary" />
 
 
                 </shape>

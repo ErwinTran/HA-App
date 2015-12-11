@@ -5,11 +5,11 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
+        android:supportsRtl="true" >
 
         <activity android:name=".ListActivity"
-            android:label="Aufgaben">
+            android:label="@string/listActivity"
+            android:theme="@style/ListActivityTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,11 +18,13 @@
         </activity>
 
         <activity android:name=".NewActivity"
-            android:label="Neue Aufgabe">
+            android:label="@string/newActivity"
+            android:theme="@style/NewActivityTheme">
         </activity>
 
         <activity android:name=".SettingsActivity"
-            android:label="Einstellungen">
+            android:label="@string/settingsActivity"
+            android:theme="@style/SettingsActivityTheme">
         </activity>
     </application>
 

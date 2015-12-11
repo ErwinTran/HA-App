@@ -137,7 +137,6 @@ public class NewActivity extends AppCompatActivity {
                 resultIntent.putExtra("entry", e.serialize());
                 resultIntent.putExtra("index", b.getInt("index", -1));
 
-                Toast.makeText(v.getContext(), "Saved a new entry", Toast.LENGTH_SHORT).show();
                 setResult(RESULT_OK, resultIntent);
                 finish();
             }
